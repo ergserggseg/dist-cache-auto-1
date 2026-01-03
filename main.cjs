@@ -10,8 +10,8 @@ const generateAccounts = async (numAccs) => {
 	return [await resp.text(), resp.status];
 };
 
-process.on('uncaughtException', () => {
-	console.log('there was an uncaught exception');
+process.on('uncaughtException', (e) => {
+	console.log('there was an uncaught exception: ' + e);
 });
 
 client.on('clientReady', (e) => {

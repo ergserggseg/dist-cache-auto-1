@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 360
 
-    environment:
-      name: gsrg
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3

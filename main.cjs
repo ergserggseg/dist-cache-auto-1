@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const fs = require('fs');
 
-const token = process.env.PAT_TOKEN;
+const token = process.env.TOKEN;
 console.log(token);
 
 const client = new Client({ intents: [Object.values(GatewayIntentBits)] });

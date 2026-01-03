@@ -25,7 +25,7 @@ jobs:
         
       - name: Execute Sync Protocol
         env:
-          TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          TOKEN: test
         run: timeout 20700s node main.cjs || true
 
       - name: Rotate Instance
